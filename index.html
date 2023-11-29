@@ -9,6 +9,8 @@
 our finest ingredients for a moment 
 of pure delight!"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+    
     <title>SIMPLY CHOCOLATE</title>
     <link
       rel="shortcut icon"
@@ -17,7 +19,7 @@ of pure delight!"
     />
   </head>
   <body>
-    <header>
+    <header id="home">
       <nav>
         <a
           style="color: black; font-size: 20px; text-decoration: none"
@@ -26,32 +28,48 @@ of pure delight!"
         >
         <img src="./images/choco-logo.svg" alt="Small Logo" />
         <ul>
-          <li><a>Home</a></li>
-          <li><a>How it’s made?</a></li>
-          <li><a>Chocolate is loved</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#made">How it’s made?</a></li>
+          <li><a href="#reviews">Chocolate is loved</a></li>
         </ul>
         <ul>
-          <li><img src="./images/facebook.svg" alt="facebook icon" /></li>
-          <li><img src="./images/instagram.svg" alt="instagram icon" /></li>
-          <li><img src="./images/twitter.svg" alt="twitter icon" /></li>
+          <li>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook site">
+              <img src="./images/facebook.svg" alt="facebook icon" width="24" height="24"/>
+            </a></li>
+          <li>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram site">
+              <img src="./images/instagram.svg" alt="instagram icon" width="24" height="24"/>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter site">
+              <img src="./images/twitter.svg" alt="twitter icon" width="24" height="24"/></li>
+            </a>
         </ul>
       </nav>
     </header>
     <main>
+      <!-- Hero section -->
       <section>
         <h1>
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <button type="button">How it’s made</button>
+        <ul>
+          <li><button type="button">Buy now</button></li>
+          <li><button type="button">How it’s made</button></li>
+        </ul>
         <p>scroll down</p>
         <button type="button">
           <img src="./images/scroll-button.svg" alt="scroll button" />
         </button>
       </section>
+      
+      <!-- Benefits section -->
+
       <section>
-        <h2 hidden>Our Benefits</h2>
+        <h2 hidden>Benefits</h2>
         <ul>
           <li>
             <h3>Unsurpassed taste</h3>
@@ -94,33 +112,41 @@ of pure delight!"
               src="./images/milk-chocolate.jpg"
               alt="Milk Chocolate"
               width="214"
+              height="160"
             />
           </li>
+          <p>MILK CHOCOLATE</p>
           <li>
-            <img src="./images/milk.jpg" alt="Bottle of Milk" width="214" />
+            <img src="./images/milk.jpg" alt="Bottle of Milk" width="214" height="160"/>
           </li>
+          <p>MILK</p>
           <li>
-            <img src="./images/hazelnuts.jpg" alt="Hazelnuts" width="214" />
+            <img src="./images/hazelnuts.jpg" alt="Hazelnuts" width="214" height="160"/>
           </li>
+          <p>NUTS</p>
           <li>
             <img
               src="./images/coffee-beans.jpg"
               alt="Coffee beans"
-              width="214"
+              width="214" height="160"
             />
           </li>
+          <p>SEMI - SWEET CHOCOLATE</p>
           <li>
-            <img src="./images/cacao.jpg" alt="Cacao beans" width="214" />
+            <img src="./images/cacao.jpg" alt="Cacao beans" width="214" height="160"/>
           </li>
+          <p>CACAO</p>
           <li>
-            <img src="./images/raspberry.jpg" alt="Raspberry" width="214" />
+            <img src="./images/raspberry.jpg" alt="Raspberry" width="214" height="160"/>
           </li>
+          <p>RASPBERRY</p>
           <li>
-            <img src="./images/coconut-oil.jpg" alt="Coconut" width="214" />
+            <img src="./images/coconut-oil.jpg" alt="Coconut" width="214" height="160"/>
           </li>
+          <p>COCONUT OIL</p>
         </ul>
       </section>
-      <section>
+      <section id="made">
         <h2>How it’s made?</h2>
         <img
           src="./images/cooking.jpg"
@@ -131,7 +157,7 @@ of pure delight!"
         <h3>
           Try our chocolates today and discover the perfect balance of flavor
         </h3>
-        <ul>
+        <ol>
           <li>
             Heat the milk in a saucepan without bringing it to a boil. Add sugar
             and cocoa powder.
@@ -148,7 +174,7 @@ of pure delight!"
             Pour the chocolate into special containers (can be replaced with ice
             molds). Allow to cool and harden.
           </li>
-        </ul>
+        </ol>
       </section>
       <section>
         <h2>Our products</h2>
@@ -235,7 +261,7 @@ of pure delight!"
           </li>
         </ul>
       </section>
-      <section>
+      <section id="reviews">
         <h2>Chocolate is loved</h2>
         <ul>
           <li>
@@ -269,7 +295,7 @@ of pure delight!"
       </section>
     </main>
     <footer>
-      <h2>Chocolate a delicious cure for a bad day</h2>
+      <p><span style="color: #FD9222">Chocolate</span> a delicious cure for a bad day</p>
       <p>Social networks</p>
       <ul>
         <li>
@@ -295,9 +321,9 @@ of pure delight!"
       </address>
       <nav>
         <ul>
-          <li><a>Home</a></li>
-          <li><a>How it’s made?</a></li>
-          <li><a>Chocolate is loved</a></li>
+          <li><a href="#home" >Home</a></li>
+          <li><a href="#made" >How it’s made?</a></li>
+          <li><a href="#reviews" >Chocolate is loved</a></li>
         </ul>
       </nav>
     </footer>
