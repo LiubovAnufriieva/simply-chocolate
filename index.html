@@ -11,7 +11,10 @@ of pure delight!"
     />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <title>SIMPLY CHOCOLATE</title>
@@ -20,30 +23,45 @@ of pure delight!"
       href="./images/choco-logo.svg"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header id="home">
-      <nav>
-        <a
-          style="color: black; font-size: 20px; text-decoration: none"
-          href="./index.html"
-          ><span style="font-style: italic">SIMPLY</span> CHOCOLATE</a
-        >
-        <img src="./images/choco-logo.svg" alt="Small Logo" />
-        <ul style="list-style-type: none">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#made">How it’s made?</a></li>
-          <li><a href="#reviews">Chocolate is loved</a></li>
+    <header id="home" class="header">
+      <nav class="header-nav">
+        <div class="logo-div">
+          <a class="logo-link" href="./index.html"
+            ><span class="logo-accent">SIMPLY</span> CHOCOLATE</a
+          >
+          <img
+            class="nav-link-img"
+            src="./images/choco-logo.svg"
+            alt="Small Logo"
+          />
+        </div>
+
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-link" href="#made">How it’s made?</a>
+          </li>
+          <li class="nav-list-item">
+            <a class="nav-link" href="#reviews">Chocolate is loved</a>
+          </li>
         </ul>
-        <ul style="list-style-type: none">
-          <li>
+
+        <ul class="header-socials socials">
+          <li class="socials-item">
             <a
+              class="socials-link"
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook site"
             >
               <img
+                class="socials-icon"
                 src="./images/facebook.svg"
                 alt="facebook icon"
                 width="24"
@@ -51,14 +69,16 @@ of pure delight!"
               />
             </a>
           </li>
-          <li>
+          <li class="socials-item">
             <a
+              class="socials-link"
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram site"
             >
               <img
+                class="socials-icon"
                 src="./images/instagram.svg"
                 alt="instagram icon"
                 width="24"
@@ -66,14 +86,16 @@ of pure delight!"
               />
             </a>
           </li>
-          <li>
+          <li class="socials-item">
             <a
+              class="socials-link"
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Twitter site"
             >
               <img
+                class="socials-icon"
                 src="./images/twitter.svg"
                 alt="twitter icon"
                 width="24"
@@ -86,18 +108,24 @@ of pure delight!"
     </header>
     <main>
       <!-- Hero section -->
-      <section>
-        <h1>
+      <section class="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <ul style="list-style-type: none">
-          <li><button type="button">Buy now</button></li>
-          <li><button type="button">How it’s made</button></li>
+        <ul class="hero-list">
+          <li class="hero-list-item"><button type="button">Buy now</button></li>
+          <li class="hero-list-item">
+            <button type="button">How it’s made</button>
+          </li>
         </ul>
-        <p>scroll down</p>
-        <button type="button">
-          <img src="./images/scroll-button.svg" alt="scroll button" />
+        <p class="hero-text">scroll down</p>
+        <button class="hero-button-scroll" type="button">
+          <img
+            class="hero-scroll-icon"
+            src="./images/scroll-button.svg"
+            alt="scroll button"
+          />
         </button>
       </section>
 
@@ -105,7 +133,7 @@ of pure delight!"
 
       <section>
         <h2 hidden>Benefits</h2>
-        <ul style="list-style-type: none">
+        <ul>
           <li>
             <h3>Unsurpassed taste</h3>
           </li>
@@ -145,7 +173,7 @@ of pure delight!"
           It all adds up to one exceptional
           <span style="color: orange">taste</span> sensation
         </h2>
-        <ul style="list-style-type: none">
+        <ul>
           <li>
             <img
               src="./images/milk-chocolate.jpg"
@@ -249,7 +277,7 @@ of pure delight!"
       </section>
       <section>
         <h2>Our products</h2>
-        <ul style="list-style-type: none">
+        <ul>
           <li>
             <img src="./images/orange.jpg" alt="Orange" width="230" />
             <h3>Orange</h3>
@@ -302,7 +330,7 @@ of pure delight!"
       </section>
       <section>
         <h2>Top sellers</h2>
-        <ul style="list-style-type: none">
+        <ul>
           <li>
             <img
               src="./images/choco-w-nuts.jpg"
@@ -334,7 +362,7 @@ of pure delight!"
       </section>
       <section id="reviews">
         <h2>Chocolate is loved</h2>
-        <ul style="list-style-type: none">
+        <ul>
           <li>
             <img src="./images/victoria.jpg" alt="Photo of Victoria" />
             <h3>Victoria Dobrzhanska</h3>
@@ -371,7 +399,7 @@ of pure delight!"
         day
       </p>
       <p>Social networks</p>
-      <ul style="list-style-type: none">
+      <ul class="footer-socials socials">
         <li>
           <a href=""><img src="./images/facebook.svg" alt="facebook icon" /></a>
         </li>

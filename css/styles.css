@@ -1,0 +1,88 @@
+body {
+    color: #111;
+    background: #FAFAFA;
+}
+
+/* Header section */
+.header {
+    display: flex;
+    width: 1200px;
+    height: 80px;
+    padding: 24px 32px 24px 32px;
+    align-items: center;
+    gap: 365px;
+    flex-shrink: 0;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.logo-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+
+.logo-accent {
+    color: #111;
+    font-style: italic;
+}
+
+.header-socials {
+    color: black;
+}
+
+.footer-socials {
+    color: white;
+}
+
+
+
+.nav-link-img {}
+
+.nav-list {}
+
+.nav-list-item {}
+
+.nav-link {}
+
+.socials {}
+
+.socials-item {}
+
+.socials-link {}
+
+.socials-icon {}
+
+
+/* Hero section */
+
+.hero {
+    display: flex;
+    width: 1136px;
+    height: 600px;
+    margin: 80px 32px 80px 32px;
+    padding: 381px 40px 40px 40px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 30px;
+    background: rgba(17, 17, 17, 0.70);
+}
+
+.hero-title {}
+
+.hero-list {}
+
+.hero-list-item {}
+
+.hero-text {}
+
+.hero-button-scroll {}
+
+.hero-scroll-icon {}
