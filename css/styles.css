@@ -1,16 +1,44 @@
 body {
+    font-family: 'Montserrat', sans-serif;
     color: #111;
     background: #FAFAFA;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+
 }
 
-/* Header section */
+a {
+    color: currentColor;
+    padding: 20px;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    font-family: inherit    ;
+}
+
+.title-span {
+    color: #FD9222;
+}
+
+/* top section */
 .header {
     display: flex;
-    width: 1200px;
-    height: 80px;
+
     padding: 24px 32px 24px 32px;
     align-items: center;
-    gap: 365px;
     flex-shrink: 0;
 }
 
@@ -40,7 +68,6 @@ body {
 .footer-socials {
     color: white;
 }
-
 
 
 .nav-link-img {}
@@ -75,7 +102,9 @@ body {
     background: rgba(17, 17, 17, 0.70);
 }
 
-.hero-title {}
+.hero-title {
+    text-align: center;
+}
 
 .hero-list {}
 
@@ -86,3 +115,176 @@ body {
 .hero-button-scroll {}
 
 .hero-scroll-icon {}
+
+/* Benefits section */
+
+.benefits {}
+
+.benefits-title {
+    text-align: center;
+}
+
+.benefits-list {}
+
+.benefits-list-item {}
+
+.benefits-subtitle {}
+
+.benefits-list-text {}
+
+.benefits-item {}
+
+.benefits-text {}
+
+/* Gallery section */
+.gallery {}
+
+.gallery-title {
+    text-align: center;
+}
+
+.gallery-span {}
+
+.gallery-list {}
+
+.gallery-item {}
+
+.gallery-pic {}
+
+/* Recipe section */
+.recipe {}
+
+.recipe-title {
+    text-align: center;
+}
+
+.recipe-pic {}
+
+.recipe-subtitle {}
+
+.recipe-list {}
+
+.recipe-item {}
+
+/*  Products section */
+.products {
+    display: inline-flex;
+    padding: 60px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.products-title {
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.67em;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+}
+
+
+
+.products-container {
+    
+}
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 24px;
+    column-gap: 18px;
+}
+
+.products-list .products-item {
+    width: 1136px;
+    width: calc((100% - 18px) / 3);
+}
+
+.products-pic {}
+
+.products-subtitle {}
+
+.products-text {}
+
+/*  Top-sellers section */
+.top-sellers {}
+
+.top-sellers-title {
+    text-align: center;
+}
+
+.top-sellers-list {}
+
+.top-sellers-item {}
+
+.top-sellers-pic {}
+
+.top-sellers-text {}
+
+/*  Top-sellers section */
+.top-sellers {}
+
+.top-sellers-title {}
+
+.title-span {}
+
+.top-sellers-list {}
+
+.top-sellers-item {}
+
+.top-sellers-pic {}
+
+.top-sellers-text {}
+
+
+/*  Reviews section */
+.reviews-title {}
+
+.title-span {}
+
+.reviews-list {}
+
+.reviews-item {}
+
+.reviews-subtitle {}
+
+.reviews-text {}
+
+/*  Footer section */
+.footer {}
+
+.footer-title {}
+
+.title-span {}
+
+.footer-text {}
+
+.footer-socials {}
+
+.socials {}
+
+.footer-item {}
+
+.footer-link {}
+
+.address {}
+
+.address-text {}
+
+.address-list {}
+
+.address-item {}
+
+.address-link {}
+
+.footer-nav {}
+
+.footer-nav-list {}
+
+.footer-nav-item {}
+
+.footer-nav-link {}
