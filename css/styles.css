@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     color: #111;
@@ -16,6 +22,9 @@ ul,ol {
     list-style-type: none;
 }
 
+h2, h3 {
+    font-weight: 600;
+}
 
 img {
     display: block;
@@ -41,8 +50,8 @@ button {
 
 .container {
     max-width: 1200px;
-    padding: 0 15px;
-    margin: 0 auto;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .header-container {
@@ -79,6 +88,10 @@ button {
     color: white;
 }
 
+.nav-list {
+
+}
+
 .nav-link:hover,
 .nav-link:focus {
     color: #FD9222;
@@ -92,9 +105,19 @@ button {
     letter-spacing: -0.02em;
 }
 
-.socials {}
+.nav-list-item {
+    display: inline-block;
+    margin-right: 24px;
+}
 
-.socials-item {}
+.socials {
+    
+}
+
+.socials-item {
+    display: inline-block;
+    gap: 8px;
+}
 
 .socials-link {}
 
@@ -104,16 +127,19 @@ button {
 /* Hero section */
 
 .hero {
-    display: flex;
+    display:flex;
     width: 1136px;
-    height: 600px;
     margin: 80px 32px 80px 32px;
     padding: 381px 40px 40px 40px;
-    justify-content: center;
-    align-items: center;
     flex-shrink: 0;
     border-radius: 30px;
     background: rgba(17, 17, 17, 0.70);
+}
+
+.hero-container {
+    width: 1056px;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .hero-title {
@@ -122,9 +148,11 @@ button {
     font-weight: 500;
     line-height: 1.21;
     letter-spacing: -0.03em;
+    width: 484px;
 }
 
 .hero-buy-now-btn {
+    display: inline-block;
     color: #FFF;
     font-size: 14px;
     background-color: #FD9222;
@@ -132,18 +160,39 @@ button {
     width: 144px; 
     height: 45px;
     border-color: transparent;
+    margin-right: 14px;
+    
 }
 
 .hero-how-made-btn {
+    display: inline-block;
     width: 144px;
     height: 45px;
     border-radius: 100px;
     border: 1px solid #FFF;
     background-color: transparent;
     color: #fff;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.scroll-container {
+    display: flex;
+    width: 130px;
+    gap: 14px;
+    flex-shrink: 0;
+    align-content: center;
+}
+
+.hero-button-scroll {
+    display: inline-block;
+    background-color: transparent;
+    border: 2px solid transparent;
+
 }
 
 .hero-text {
+    display: inline-block;
     color: #FFF;
     font-size: 14px;
     font-weight: 500;
@@ -151,15 +200,30 @@ button {
     letter-spacing: -0.03em;
 }
 
+
+
 /* Benefits section */
 
 .benefits {
     background-color: #1E1823;
+    display: inline-block;
+    width: 1200px;
+    padding: 50px 0px;
+
 }
 
 .benefits-title {
     text-align: center;
 }
+
+
+
+.benefits-list-item {
+    width: calc((100% - 176px) / 2);
+    gap: 88px;
+}
+   
+
 
 .benefits-subtitle {
     color: var(--white, #FFF);
@@ -178,18 +242,50 @@ button {
 }
 
 /* Gallery section */
-.gallery {}
+
+.gallery-container {
+    width: 1136px;
+    display: inline-flex;
+    padding: 120px 0px 60px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
 
 .gallery-title {
     text-align: center;
+    width: 412px;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: -0.03em;
     text-transform: uppercase;
 }
 
+.gallery-list-container {
+    
+}
+
+.gallery-item {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: calc((100% - 96px)/4);
+    margin-bottom: 32px;
+    gap: 32px;
+}
+
+.gallery-pic {
+    
+}
+
 /* Recipe section */
 
+.recipe-container {
+    display: flex;
+    width: 1136px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
 
 .recipe-title {
     text-align: center;
@@ -197,20 +293,35 @@ button {
     line-height: 1.17;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
-
-
 
 .recipe-right-side {
+    border-radius: 15px;
     background: #FFF;
-}
-
-.recipe-subtitle {
-    line-height: 1.33;
+    width: 516px;
+    padding: 32px;
+    margin-left: 20px;
     
 }
 
+.right-side-container {
+    display: flex;
+    width: 452px;
+    height: 336px;
+    align-content: flex-start;
+    gap: 28px;
+    flex-shrink: 0;
+}
 
+.recipe-subtitle {
+    width: 350px;
+    line-height: 1.33;
+}
+
+.recipe-list {
+    width: 436px;
+}
 
 .recipe-item {
     font-size: 14px;
@@ -220,12 +331,13 @@ button {
 }
 
 /*  Products section */
-.products {
+
+.products-container {
     display: inline-flex;
-    padding: 60px 0px;
     flex-direction: column;
     align-items: center;
-    gap: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .products-title {
@@ -247,14 +359,14 @@ button {
 .products-item {
     width: 270px;
     height: 364px;
-    flex-shrink: 0;
     align-content: center;
     text-align: center;
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
     background: #FFF;
-    margin-top: 24px;
+    margin-bottom: 24px;
     margin-right: 18px;
+   
 }
 
 .products-pic {
@@ -283,6 +395,7 @@ button {
     background: #FAFAFA;
     width: 94px;
     height: 33px;
+    margin-bottom: 40px;
 }
 
 /*  Top-sellers section */
@@ -290,9 +403,7 @@ button {
 
 .top-sellers-title {
     text-align: center;
-   
     font-size: 24px;
-    font-weight: 600;
     line-height: 1.17;
     letter-spacing: -0.03em;
     text-transform: uppercase;
@@ -342,8 +453,7 @@ button {
 
 .reviews-title {
     text-align: center;
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 24px; 
     line-height: 1.17;
     letter-spacing: -0.03em;
     text-transform: uppercase;
@@ -407,7 +517,9 @@ button {
 
 .footer-container {
     display: flex;
-    
+    padding: 50px 32px;
+    align-items: flex-start;
+    gap: 74px;
 }
 
 .footer-title {

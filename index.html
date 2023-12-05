@@ -31,9 +31,9 @@ of pure delight!"
     <!-- Stylesheet connecting -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="container">
     <header id="home" class="header">
-      <div class="container header-container">
+      <div class="header-container">
       <nav class="header-nav">
         <div class="logo-div">
           <a class="logo-link" href="./index.html"
@@ -44,9 +44,9 @@ of pure delight!"
             src="./images/choco-logo.svg"
             alt="Small Logo"
           />
-        </div>
+        
 
-        <ul class="nav-list">
+        <ul>
           <li class="nav-list-item">
             <a class="nav-link" href="#home">Home</a>
           </li>
@@ -117,17 +117,14 @@ of pure delight!"
     <main>
       <!-- Hero section -->
       <section class="hero">
+        <div class="hero-container">
         <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <ul class="hero-list">
-          <li class="hero-list-item">
-            <button class="hero-buy-now-btn" type="button">Buy now</button></li>
-          <li class="hero-list-item">
-            <button class="hero-how-made-btn" type="button">How it’s made</button>
-          </li>
-        </ul>
+        <button class="hero-buy-now-btn" type="button">Buy now</button></li>
+        <button class="hero-how-made-btn" type="button">How it’s made</button>
+        <div class="scroll-container"> 
         <p class="hero-text">scroll down</p>
         <button class="hero-button-scroll" type="button">
           <img
@@ -136,16 +133,18 @@ of pure delight!"
             alt="scroll button"
           />
         </button>
+        </div>
+        </div>
       </section>
 
       <!-- Benefits section -->
-      <section class="benefits">
+      <section>
+        
         <h2 class="benefits-title" hidden>Benefits</h2>
+        <div class="benefits"> 
         <ul class="benefits-list">
           <li class="benefits-list-item">
             <h3 class="benefits-subtitle">Unsurpassed taste</h3>
-          </li>
-          <li class="benefits-list-item">
             <p class="benefits-text">
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
@@ -153,10 +152,8 @@ of pure delight!"
               Taste and discover a new level of chocolate bliss.
             </p>
           </li>
-          <li class="benefits-item">
+          <li class="benefits-list-item">
             <h3 class="benefits-subtitle">Affordable price</h3>
-          </li>
-          <li class="benefits-item">
             <p class="benefits-text">
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
@@ -165,10 +162,8 @@ of pure delight!"
               affordable luxury today.
             </p>
           </li>
-          <li class="benefits-item">
+          <li class="benefits-list-item">
             <h3 class="benefits-subtitle">Own production</h3>
-          </li>
-          <li class="benefits-item">
             <p class="benefits-text">
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
@@ -177,15 +172,17 @@ of pure delight!"
             </p>
           </li>
         </ul>
+        </div>
       </section>
 
       <!-- Gallery section -->
-      <section class="gallery">
+      <section>
+        <div class="gallery-container"> 
         <h2 class="gallery-title">
           It all adds up to one exceptional
           <span class="title-span">taste</span> sensation
         </h2>
-
+        <div class="gallery-list-container"> 
         <ul class="gallery-list">
           <li class="gallery-item">
             <img
@@ -193,43 +190,37 @@ of pure delight!"
               src="./images/milk-chocolate.jpg"
               alt="Milk Chocolate"
               width="214"
-              height="160"
+             
             />
           </li>
           
-
           <li class="gallery-item">
             <img
               class="gallery-pic"
               src="./images/milk.jpg"
               alt="Bottle of Milk"
               width="214"
-              height="160"
+            
             />
           </li>
           
-
           <li class="gallery-item">
             <img
               class="gallery-pic"
               src="./images/hazelnuts.jpg"
               alt="Hazelnuts"
               width="214"
-              height="160"
             />
           </li>
           
-
           <li class="gallery-item">
             <img
               class="gallery-pic"
               src="./images/coffee-beans.jpg"
               alt="Coffee beans"
               width="214"
-              height="160"
             />
           </li>
-          
 
           <li class="gallery-item">
             <img
@@ -237,7 +228,6 @@ of pure delight!"
               src="./images/cacao.jpg"
               alt="Cacao beans"
               width="214"
-              height="160"
             />
           </li>
 
@@ -247,7 +237,6 @@ of pure delight!"
               src="./images/raspberry.jpg"
               alt="Raspberry"
               width="214"
-              height="160"
             />
           </li>  
 
@@ -257,17 +246,19 @@ of pure delight!"
               src="./images/coconut-oil.jpg"
               alt="Coconut"
               width="214"
-              height="160"
             />
           </li>
           
         </ul>
+        </div>
+        </div>
       </section>
 
       <!-- Recipe section -->
       <section class="recipe" id="made">
         
         <h2 class="recipe-title">How it’s <span class="title-span">made</span>?</h2>
+        <div class="recipe-container">
         <img
           class="recipe-pic"
           src="./images/cooking.jpg"
@@ -276,9 +267,10 @@ of pure delight!"
           height="400"
         />
         <div class="recipe-right-side">
-        <p class="recipe-subtitle">
+          <div class="right-side-container">
+        <h3 class="recipe-subtitle">
           Try our chocolates today and discover the perfect balance of flavor
-        </p>
+        </h3>
         <ol class="recipe-list">
           <li class="recipe-item">
             Heat the milk in a saucepan without bringing it to a boil. Add sugar
@@ -299,12 +291,14 @@ of pure delight!"
             molds). Allow to cool and harden.
           </li>
         </ol>
+         </div>
+        </div>
         </div>
       </section>
 
       <!-- Products section -->
       <section>
-        <div class="products">
+        <div class="products-container">
         <h2 class="products-title">Our <span class="title-span">products</span> </h2>
         <div class="products-container">
         <ul class="products-list">
