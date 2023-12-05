@@ -58,7 +58,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    
 }
 
 .logo-link {
@@ -110,8 +110,11 @@ button {
     margin-right: 24px;
 }
 
-.socials {
-    
+.header-socials {
+    display: flex;
+    align-items: flex-end;
+    gap: 14px;
+    margin-left: 90px;
 }
 
 .socials-item {
@@ -119,9 +122,7 @@ button {
     gap: 8px;
 }
 
-.socials-link {}
 
-.socials-icon {}
 
 
 /* Hero section */
