@@ -39,6 +39,18 @@ button {
     color: #FD9222;
 }
 
+.title {
+    width: 412px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    outline: auto;
+    margin: 0;
+}
+
 /* top section */
 .header {
     display: flex;
@@ -198,13 +210,14 @@ button {
 
 
 /* Benefits section */
+.benefits-section {
+    background-color: #1E1823;
+}
 
 .benefits {
-    background-color: #1E1823;
-    display: inline-block;
-    width: 1200px;
-    padding: 50px 0px;
-
+    gap: 88px;
+    padding: 50px;
+   
 }
 
 .benefits-title {
@@ -212,18 +225,28 @@ button {
 }
 
 
+.benefits-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 88px;
+    margin: 0;
+    padding: 0;
+}
 
 .benefits-list-item {
     width: calc((100% - 176px) / 2);
-    gap: 88px;
+  
+    margin: 0;
+    padding: 0;
 }
-   
-
 
 .benefits-subtitle {
     color: var(--white, #FFF);
     line-height: 1.22;
     align-self: stretch;
+    margin: 0;
+    padding: 0;
 }
 
 .benefits-text {
@@ -234,6 +257,8 @@ button {
     font-weight: 400;
     line-height: 1.29;
     letter-spacing: -0.02em;
+    margin: 0;
+    padding: 0;
 }
 
 /* Gallery section */
@@ -245,6 +270,7 @@ button {
     flex-direction: column;
     align-items: center;
     gap: 50px;
+    margin: 0;
 }
 
 
@@ -255,14 +281,22 @@ button {
     line-height: 1.17;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    margin: 0;
+    padding: 0;
 }
  
+.gallery-list {
+    
+}
+
 .gallery-item {
     display: inline-flex;
     flex-wrap: wrap;
-    width: calc((100% - 96px)/4);
-    margin-bottom: 32px;
     gap: 32px;
+    margin-bottom: 32px;
+    width: calc((100% - 96px)/4);
+    
+   
 }
 
 
@@ -283,7 +317,7 @@ button {
     line-height: 1.17;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-   
+    
 }
 
 .recipe-right-side {
@@ -330,8 +364,9 @@ button {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 60px;
-    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: 0;
 }
 
 .products-title {
@@ -340,32 +375,38 @@ button {
     line-height: 1.67em;
     letter-spacing: -0.72px;
     text-transform: uppercase;
+    
 }
 
 
 .products-list {
     display: flex;
     flex-wrap: wrap;
-   
+    gap: 24px 18px;
+    margin: 0;
+    padding: 0;
 }
 
 
 .products-item {
-    width: 270px;
-    height: 364px;
     align-content: center;
     text-align: center;
     border-radius: 15px;
     border: 1px solid rgba(17, 17, 17, 0.10);
     background: #FFF;
-    margin-bottom: 24px;
-    margin-right: 18px;
-   
+    width: calc((100% - 54px) / 4);
+    margin: 0;
+    padding: 0;
 }
 
 .products-pic {
-    margin-top: 32px;
-    margin-left: 20px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    padding: 0;
+    
 }
 
 .products-subtitle {
@@ -393,7 +434,15 @@ button {
 }
 
 /*  Top-sellers section */
-
+.top-sellers {
+    padding: 60px 0 60px 0;
+    justify-content: center;
+    margin: 0;
+    width: 1136px;
+    height: 742px;
+    margin: 0 32px;
+ 
+}
 
 .top-sellers-title {
     text-align: center;
@@ -401,36 +450,45 @@ button {
     line-height: 1.17;
     letter-spacing: -0.03em;
     text-transform: uppercase;
+    padding: 0;
+    margin: 50px;
+   
 }
-
-
 
 .top-sellers-list {
     display: flex;
+    gap: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .top-sellers-item {
-    width: 368px;
-    flex-shrink: 0;
-    align-content: center;
+    width: calc((100% - 32px) / 3);
     text-align: center;
     border-radius: 15px;
     border-right: 1px solid rgba(17, 17, 17, 0.10);
     border-bottom: 1px solid rgba(17, 17, 17, 0.10);
     border-left: 1px solid rgba(17, 17, 17, 0.10);
     background: #FFF;
-    margin-top: 50px;
-    margin-right: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 .top-sellers-pic {
-    border-radius: 15px;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    max-width: 100%;
+    object-fit: contain;
+    padding: 0;
+    margin: 0;
 }
 
 .top-sellers-text {
     line-height: 1.33;
     letter-spacing: -0.02em;
     text-transform: uppercase;
+   
+
 }
 
 
@@ -506,7 +564,7 @@ button {
 /*  Footer section */
 .footer {
     background-color: #1E1823;
-
+ 
    
 }
 
@@ -515,8 +573,9 @@ button {
     padding: 50px 32px;
     align-items: flex-start;
     gap: 74px;
-   
     border-bottom: 1px solid #FFFFFF1A;
+
+    
 }
 
 .footer-title {
