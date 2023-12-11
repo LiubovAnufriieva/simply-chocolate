@@ -36,8 +36,7 @@ of pure delight!"
   <body class="container">
     <header id="home" class="header">
       <div class="header-container">
-        <nav class="header-nav">
-          <div class="logo-div">
+        <div class="logo-div">
             <a class="logo-link" href="./index.html"
               ><span class="logo-accent">SIMPLY</span> CHOCOLATE</a
             >
@@ -46,8 +45,10 @@ of pure delight!"
               src="./images/choco-logo.svg"
               alt="Small Logo"
             />
-          </div>
-          <ul>
+        </div>
+        <nav class="header-nav">
+    
+          <ul class="header-nav-list">
             <li class="nav-list-item">
               <a class="nav-link" href="#home">Home</a>
             </li>
@@ -58,8 +59,8 @@ of pure delight!"
               <a class="nav-link" href="#reviews">Chocolate is loved</a>
             </li>
           </ul>
-
-          <ul class="header-socials">
+        </nav>
+        <ul class="header-socials-list">
             <li class="socials-item">
               <a
                 class="socials-link"
@@ -111,8 +112,8 @@ of pure delight!"
                 />
               </a>
             </li>
-          </ul>
-        </nav>
+        <ul>
+        
       </div>
     </header>
     <main>
@@ -123,24 +124,29 @@ of pure delight!"
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
-          <button class="hero-buy-now-btn" type="button">Buy now</button>
-          <button class="hero-how-made-btn" type="button">How it’s made</button>
-          <div class="scroll-container">
-            <p class="hero-text">scroll down</p>
-            <button class="hero-button-scroll" type="button">
-              <img
-                class="hero-scroll-icon"
-                src="./images/scroll-button.svg"
-                alt="scroll button"
-              />
+          <div class="hero-wrapper">  
+            <ul class="hero-button-list"> 
+              <li><button class="hero-buy-now-btn" type="button">Buy now</button></li>
+              <li><button class="hero-how-made-btn" type="button">How it’s made</button></li>
+            </ul>
+            
+            <button class="hero-button-scroll" type="button">scroll down
+                <span class="circle"> 
+                <img
+                  class="hero-scroll-icon"
+                  src="./images/scroll-button.svg"
+                  alt="scroll button" width="32" height="32"
+                />
+              </span>
             </button>
-          </div>
+          </div>      
+
         </div>
       </section>
 
       <!-- Benefits section -->
       <section class="benefits-section">
-        <h2 class="title benefits-title" hidden>Benefits</h2>
+        <h2 class="visually-hidden">Benefits</h2>
         <div class="benefits">
           <ul class="benefits-list">
             <li class="benefits-list-item">
@@ -176,7 +182,7 @@ of pure delight!"
       </section>
 
       <!-- Gallery section -->
-      <section class="section">
+      <section class="gallery-section">
         <div class="gallery-container">
           <h2 class="title gallery-title">
             It all adds up to one exceptional
@@ -187,64 +193,78 @@ of pure delight!"
               <li class="gallery-item">
                 <img
                   class="gallery-pic"
-                  src="./images/milk-chocolate.jpg"
+                  src="./images/milk-choco1.jpg"
                   alt="Milk Chocolate"
                   width="214"
+                  height="160"
                 />
+                <p class="gallery-text">MILK CHOCOLATE</p>
               </li>
 
               <li class="gallery-item">
                 <img
                   class="gallery-pic"
-                  src="./images/milk.jpg"
+                  src="./images/milk2.jpg"
                   alt="Bottle of Milk"
                   width="214"
+                  height="160"
                 />
+                <p class="gallery-text">MILK</p>
               </li>
 
               <li class="gallery-item">
                 <img
                   class="gallery-pic"
-                  src="./images/hazelnuts.jpg"
+                  src="./images/nuts3.jpg"
                   alt="Hazelnuts"
                   width="214"
+                  height="160"
                 />
+                <p class="gallery-text">NUTS</p>
               </li>
 
               <li class="gallery-item">
                 <img
                   class="gallery-pic"
-                  src="./images/coffee-beans.jpg"
+                  src="./images/sweet-choco4.jpg"
                   alt="Coffee beans"
                   width="214"
+                  height="160"
                 />
+                <p class="gallery-text">SEMI - SWEET CHOCOLATE</p>
               </li>
 
               <li class="gallery-item">
                 <img
                   class="gallery-pic"
-                  src="./images/cacao.jpg"
+                  src="./images/cacao5.jpg"
                   alt="Cacao beans"
                   width="214"
+                  height="160"
                 />
+                <p class="gallery-text">CACAO</p>
               </li>
 
               <li class="gallery-item">
                 <img
                   class="gallery-pic"
-                  src="./images/raspberry.jpg"
+                  src="./images/raspberry6.jpg"
                   alt="Raspberry"
                   width="214"
+                  height="160"
                 />
+                <p class="gallery-text">RASPBERRY</p>
               </li>
 
               <li class="gallery-item">
                 <img
                   class="gallery-pic"
-                  src="./images/coconut-oil.jpg"
+                  src="./images/coconut7.jpg"
                   alt="Coconut"
                   width="214"
+                  height="160"
                 />
+                <p class="gallery-text">COCONUT OIL</p>
               </li>
             </ul>
           </div>
@@ -252,7 +272,7 @@ of pure delight!"
       </section>
 
       <!-- Recipe section -->
-      <section class="section recipe" id="made">
+      <section class="recipe-section" id="made">
         <h2 class="title recipe-title">
           How it’s <span class="title-span">made</span>
         </h2>
@@ -297,7 +317,7 @@ of pure delight!"
       </section>
 
       <!-- Products section -->
-      <section class="section">
+      <section class="products-section">
         <div class="products-container">
           <h2 class="title products-title">
             Our <span class="title-span">products</span>
@@ -397,7 +417,7 @@ of pure delight!"
       </section>
 
       <!-- Top-sellers section -->
-      <section class="section top-sellers">
+      <section class="top-sellers">
         <h2 class="top-sellers-title">
           <span class="title-span">Top</span> sellers
         </h2>
@@ -436,7 +456,7 @@ of pure delight!"
       </section>
 
       <!-- Reviews section -->
-      <section class="section reviews" id="reviews">
+      <section class="reviews-section" id="reviews">
         <h2 class="title reviews-title">
           <span class="title-span">Chocolate </span> is loved
         </h2>
