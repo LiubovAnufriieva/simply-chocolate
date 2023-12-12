@@ -91,8 +91,6 @@ button {
     justify-content:flex-start;
     align-items: center;
     gap: 4px;
-
-
 }
 
 .logo-link {
@@ -102,7 +100,8 @@ button {
     letter-spacing: -0.03em;
     text-transform: uppercase;
     padding: 0;
-   
+    margin: 30px 0;
+    min-width: 185px;
 }
 
 .logo-accent {
@@ -582,14 +581,10 @@ button {
 /*  Reviews section */
 .reviews-section {
     padding: 60px 0 120px 0;
-    justify-content: center;
     width: 1136px;
-    height: 742px;
     margin: 0 32px;
-    gap: 50px;
-
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    justify-items: center;
 }
 
 
@@ -621,13 +616,14 @@ button {
 }
 
 .reviews-pic {
-    
    width: 50%;
 }
 
 .reviews-subtitle {
     text-align: center;
     line-height: 1.33;
+    font-size: 18px;
+    font-weight: 600;
 }
 
 .reviews-text {
@@ -641,17 +637,17 @@ button {
 }
 
 .reviews-btn {
-    display: flex;
+    
     width: 222px;
     height: 50px;
     padding: 14px 40px;
-    color: var(--black, #111);
-    font-family: Montserrat;
     font-size: 18px;
     border-radius: 100px;
     border: 1px solid #FD9222;
     background-color: #FFF;
-    
+    margin: 0;
+    margin-top: 50px;
+    margin-left: 457px;
 }
 
 
@@ -741,4 +737,8 @@ button {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: -0.02em;
+}
+
+.reviews-pic {
+    display: inline-flex;
 }
