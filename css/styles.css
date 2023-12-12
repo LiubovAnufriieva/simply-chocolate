@@ -60,7 +60,7 @@ button {
 .section {
     outline: auto;
     margin: 0;
-    1
+
 }
 
 .container {
@@ -73,7 +73,7 @@ button {
 /* Header section */
 .header {
     align-items: center;
-    margin: auto;
+    margin: 0;
 }
 
 .header-container {
@@ -87,17 +87,22 @@ button {
 
 .logo-div {
     display: flex;
-    justify-content: center;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
     align-items: center;
     gap: 4px;
+
+
 }
 
 .logo-link {
+    font-size: 18px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: -0.03em;
     text-transform: uppercase;
     padding: 0;
+   
 }
 
 .logo-accent {
@@ -107,7 +112,6 @@ button {
 
 .header-nav-list {
     display: flex;
-    
     padding: 0;
     margin: 0;
     justify-items:auto;
@@ -345,14 +349,11 @@ button {
     padding: 0;
 }
 
-.gallery-item {
-    
+.gallery-item {    
     width: calc((100% - 96px) / 4);
     border-radius: 15px;
     border-color: 1px solid #fd9222;
     padding: 28px 23px 0 23px; 
-
-
 }
 
 .gallery-item:nth-child(4n + 1) {
@@ -363,6 +364,7 @@ button {
 .gallery-item:nth-child(4n + 3) {
     background-color: #1E1823;
     color: #FFF;
+    
 }
 
 .gallery-item:nth-child(even) {
@@ -370,16 +372,6 @@ button {
     border: 1px solid #FD9222;
    
 }
-
-.gallery-pic {
- 
-  
-
-}
-
-.gallery-pic:nth-child(4n + 3) {
-    background: #fd9222;
-} 
 
 .gallery-text {
     font-size: 14px;
@@ -390,8 +382,6 @@ button {
     margin-bottom: 28px;
     padding: 0;   
 }
-
-
 
 /* Recipe section */
 .recipe-section {
@@ -632,7 +622,7 @@ button {
 
 .reviews-pic {
     
-   
+   width: 50%;
 }
 
 .reviews-subtitle {
