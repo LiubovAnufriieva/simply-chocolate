@@ -630,6 +630,8 @@ of pure delight!"
                 >
               </li>
             </ul>
+
+
           </address>
         </div>
 
@@ -650,6 +652,66 @@ of pure delight!"
     </footer>
 
     <!-- Modal window -->
-    <div class="backdrop"></div>
+    <div class="backdrop" is-open>
+      <form class="form" name="leave-review-form" autocomplete="off">
+        
+          <button class="close-button">
+            <svg class="close-icon" width="24" height="24">
+              <use href="./images/sprite.svg#close-icon"></use>
+            </svg>
+          </button>
+       
+        <p class="form-title">LEAVE A REVIEW ABOUT <span class="accent"> OUR CHOCOLATE</span> </p>
+        <div class="user-div"> 
+          <label class="form-label">
+            Name
+            <div> 
+              <input class="form-input blueberry" type="text" name="Name" required/>
+              <svg class="icon-user icon-input" width="24" height="24">
+                <use href="./images/sprite.svg#icon-user"></use>
+              </svg>
+            </div>
+          </label>
+        </div>
+        <div class="user-div">  
+          <label class="form-label">
+            Email
+            <div> 
+              <input class="form-input" type="email" name="email" required/>
+              <svg class="icon-mail icon-input" width="24" height="24">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </label>
+        </div>
+        <div class="user-div"> 
+        <label class="form-label">
+          Phone number
+          <div> 
+            <input class="form-input" type="tel" name="phone" required/>
+            <svg class="icon-phone icon-input" width="24" height="24">
+              <use href="./images/sprite.svg#icon-phone"></use>
+            </svg>
+          </div>
+        </label>
+        </div>
+
+        <label class="form-label">
+          <span class="label-text">Comment</span>
+          <textarea class="text-area" name="Comment" rows="5" placeholder="Enter text..."></textarea>
+        </label>
+
+        <div class="checkbox-div"> 
+          <label class="checkbox-label">
+            <input class="checkbox" type="checkbox" name="" value="" />
+            <p class="chackbox-text"> 
+              I accept the terms and conditions of the <span class="accent"> Privacy Policy</span>
+            </p> 
+          </label>
+        </div>
+        <button class="form-button" type="submit">Send</button>
+
+      </form>
+    </div>
   </body>
 </html>
