@@ -114,7 +114,7 @@ of pure delight!"
           <div class="hero-wrapper">  
             <ul class="hero-list"> 
               <li class="hero-item">
-                <button class="hero-btn primary" type="button">Buy now</button>
+                <button class="hero-btn primary" type="button" data-modal-open>Buy now</button>
               </li>
               <li class="hero-item">
                 <button class="hero-btn secondary" type="button">How it’s made</button>
@@ -662,7 +662,7 @@ of pure delight!"
                   type="email"
                   placeholder="Enter your email" />
               </label>
-              <button class="subscribe-form-btn" type="submit">
+              <button class="subscribe-form-btn" type="submit" >
                 Subscribe
                 <svg class="subscribe-form-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-send"></use>
@@ -678,9 +678,9 @@ of pure delight!"
    
 
     <!-- Modal window -->
-    <div class="backdrop is-hidden is-open" >
+    <div class="backdrop is-hidden " data-modal>
       <div class="modal"> 
-        <button class="close-button" type="button" aria-label="modal close button">
+        <button class="close-button" type="button" aria-label="modal close button" data-modal-close>
           <svg class="close-icon" width="28" height="28">
             <use href="./images/sprite.svg#close-icon"></use>
           </svg>
@@ -749,5 +749,7 @@ of pure delight!"
         </form>
       </div>  
     </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
