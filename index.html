@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
@@ -46,6 +47,11 @@ of pure delight!"
               <use href="./images/sprite.svg#icon-choco-logo"></use>
             </svg>
           </a>  
+          <button class="menu-btn" type="button" aria-label="Open menu button">
+            <svg class="menu-btn-icon" width="28" height="28">
+              <use href="./images/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul  class="header-list">
             <li class="header-item">
               <a class="header-link active" href="#home">Home</a>
@@ -58,7 +64,7 @@ of pure delight!"
             </li>
           </ul>
         </nav>
-        <ul class="header-socials socials">
+        <ul class="header-socials">
           <li class="socials-item">
             <a
                 class="socials-link"
@@ -106,15 +112,16 @@ of pure delight!"
     <main>
       <!-- Hero section -->
       <section class="hero container">
+
         <div class="hero-container ">
           <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment
+            Treat yourself or a loved &nbsp;one to our finest ingredients for a moment
             of pure delight!
           </h1>
           <div class="hero-wrapper">  
             <ul class="hero-list"> 
               <li class="hero-item">
-                <button class="hero-btn primary" type="button" data-modal-open>Buy now</button>
+                <button class="hero-btn primary" type="button">Buy now</button>
               </li>
               <li class="hero-item">
                 <button class="hero-btn secondary" type="button">How it’s made</button>
@@ -131,10 +138,11 @@ of pure delight!"
             </button>
           </div>  
         </div>
+        
       </section>
 
       <!-- Features section -->
-      <section class="features">
+      <section class="features section">
         <div class="features-div container">  
           <h2 class="visually-hidden">Chocolate benefits</h2>
           <ul class="features-list">
@@ -186,8 +194,8 @@ of pure delight!"
       </section>
 
       <!-- Ingridients section -->
-      <section class="ingridients section">
-        <div class="container">
+      <section class="ingredients-section section">
+        <div class="ingridients container">
           <h2 class="ingridients-title">
             It all adds up to one exceptional
             <span class="accent">taste</span> sensation
@@ -297,17 +305,22 @@ of pure delight!"
 
       <!-- Made section -->
       <section class="made section" id="made">
-        <div class="container">
+        <div class="container made-container">
           <h2 class="made-title">How it’s <span class="accent">made</span>?</h2>
           <div class="made-wrapper">
             <div class="made-left-side">
-              <img
-                class="made-img"
-                src="./images/cooking.jpg"
-                alt="Cooking chocolate image"
-                width="600"
-                height="400"
-              />
+              <picture>
+                <source media="(min-width: 1200px)" srcset="./images/made_desk@1x.jpg 1x, ./images/made_desk@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/made_tab@1x.jpg 1x, ./images/made_tab@2x.jpg 2x">
+                <source media="(min-width: 320px)" srcset="./images/made_mob@1x.jpg 1x, ./images/made_mob@2x.jpg 2x">
+                <img
+                  class="made-img"
+                  src="./images/cooking.jpg"
+                  alt="Cooking chocolate image"
+                  loading="lazy"
+                />
+              </picture>
+             
               <button class="made-btn" type="button">
                 <svg class="made-btn-icon" width="44" height="44">
                   <use href="./images/sprite.svg#icon-play"></use>
@@ -347,7 +360,7 @@ of pure delight!"
 
       <!-- Products section -->
       <section class="products section">
-        <div class="container">
+        <div class="products-div container">
           <h2 class="products-title">
             Our <span class="accent">products</span>
           </h2>
@@ -446,19 +459,24 @@ of pure delight!"
 
       <!-- Bestsellers section -->
       <section class="bestsellers section">
-        <div class="container">
+        <div class="bestsellers-div container">
           <h2 class="bestsellers-title">
             <span class="accent">Top</span> sellers
           </h2>
           <ul class="bestsellers-list">
             <li class="bestsellers-item">
               <div class="bestsellers-wrapper">
-                <img
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/choco-nuts_desk.jpg 1x, ./images/choco-nuts_desk@2x.jpg  2x">
+                  <source media="(min-width: 768px)" srcset="./images/choco-nuts_tab@1x.jpg 1x, ./images/choco-nuts_tab@2x.jpg 2x">
+                  <source media="(min-width: 320px)" srcset="./images/choco-nuts_mob@1x.jpg 1x, ./images/choco-nuts_mob@2x.jpg 2x">
+                  <img
                   class="bestsellers-pic"
-                  src="./images/choco-w-nuts.jpg"
+                  src="./images/choco-nuts_desk.jpg"
                   alt="Chocolate with nuts"
-                  width="368"
-                  height="464" />
+                  loading="lazy"/>
+                  
+                </picture>
                 <p class="overlay overlay-text">
                   Chocolate with fruit is an unbeatable combination of two of
                   the tastiest things in the world. This dessert combines
@@ -470,13 +488,17 @@ of pure delight!"
             </li>
             <li class="bestsellers-item">
               <div class="bestsellers-wrapper"> 
-                <img
-                  class="bestsellers-pic"
-                  src="./images/choc-w-fruits.jpg"
-                  alt="Chocolate with fruits"
-                  width="368"
-                  height="464"
-                />
+                
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/choco-fruits_desk@1x.jpg 1x, ./images/choco-fruits_desk@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="./images/choco-fruits_tab@1x.jpg 1x, ./images/choco-fruits_tab@2x.jpg 2x">
+                  <img
+                    class="bestsellers-pic"
+                    src="./images/choco-fruits_desk@1x.jpg"
+                    alt="Chocolate with fruits"
+                    loading="lazy"
+                  />
+                </picture>
                 <p class="overlay overlay-text">
                   Chocolate with fruit is an unbeatable combination of two of
                   the tastiest things in the world. This dessert combines
@@ -488,13 +510,15 @@ of pure delight!"
             </li> 
             <li class="bestsellers-item">
               <div class="bestsellers-wrapper">  
-                <img
-                class="bestsellers-pic"
-                src="./images/dark.jpg"
-                alt="Dark chocolate"
-                width="368"
-                height="464"
-                />
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="./images/choco-dark_desk@1x.jpg 1x, ./images/choco-dark_desk@2x.jpg 2x">
+                  <img
+                  class="bestsellers-pic"
+                  src="./images/choco-dark_desk@1x.jpg"
+                  alt="Dark chocolate"
+                  loading="lazy"
+                  />
+                </picture>
                 <p class="overlay overlay-text">
                 Chocolate with fruit is an unbeatable combination of two of
                 the tastiest things in the world. This dessert combines
@@ -510,7 +534,7 @@ of pure delight!"
 
       <!-- Reviews section -->
       <section class="reviews section" id="reviews">
-        <div class="container">
+        <div class="container reviews-container">
           <h2 class="reviews-title">
             <span class="accent">Chocolate</span> is loved
           </h2>
@@ -562,16 +586,16 @@ of pure delight!"
           </ul>
           <button class="reviews-btn" type="button">Leave a review</button>
         </div>
-      </section>
+      </section> 
 
     </main>
 
     <!-- Footer section -->
     <footer class="footer section">
-      <div class="container">
+      <div class="footer-container container">
         <div class="footer-top">
           <p class="footer-slogan">
-            <span class="accent">Chocolate</span> a delicious cure for a bad day
+            <span class="accent">Chocolate</span> a delicious &nbsp;cure for a bad day
           </p>
           <div class="footer-socials">
             <p class="footer-caption">Social networks</p>
@@ -630,8 +654,6 @@ of pure delight!"
                 >
               </li>
             </ul>
-
-
           </address>
         </div>
 
@@ -650,25 +672,17 @@ of pure delight!"
             </ul>
           </div>
 
-
-<!--  -->
-
-          <!-- Footer subscribe form -->
+          <!-- Footer subscribe form  -->
           <div class="footer-wrapper">
             <form class="subscribe-form" name="subscribe">
-              <label class="subscribe-form-field">
                 <input
                   class="subscribe-form-input"
                   type="email"
                   placeholder="Enter your email" />
-              </label>
-              <button class="subscribe-form-btn" type="submit" >
-                Subscribe
-                <svg class="subscribe-form-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-send"></use>
-                </svg>
-              </button>
             </form>
+            <button class="subscribe-form-btn" type="submit" >
+              Subscribe
+            </button>
           </div>
         </div>
 
@@ -677,8 +691,8 @@ of pure delight!"
 
    
 
-    <!-- Modal window -->
-    <div class="backdrop is-hidden " data-modal>
+    <!-- Modal window --> 
+    <div class="backdrop is-hidden is-open" data-modal>
       <div class="modal"> 
         <button class="close-button" type="button" aria-label="modal close button" data-modal-close>
           <svg class="close-icon" width="28" height="28">
@@ -694,11 +708,12 @@ of pure delight!"
             <div class="user-div"> 
               <input class="form-input" type="text" id="user-name" name="user-name" required  minlength="2"
               placeholder="&nbsp;"/>
-              <svg class="icon-input" width="24" height="24">
+              <svg class="icon-input" width="24" height="24"> 
                 <!-- 
                 <use class="error" href="./images/sprite.svg#error"></use>
                 <use class="success" href="./images/sprite.svg#success"></use>
                 -->
+            
                 <use class="icon-user" href="./images/sprite.svg#icon-user1"></use>
               </svg>
             </div>
@@ -734,12 +749,13 @@ of pure delight!"
 
           <div class="checkbox-div"> 
             <input class="checkbox-input visually-hidden" id="user-privacy" type="checkbox" name="user-privacy" value="true"/>
+            <span class="checkbox-icon-span"> 
+              <svg class="checkbox-icon" width="10" height="10"> 
+                <use href="./images/sprite.svg#click-icon-vector"></use>   
+              </svg>
+            </span> 
             <label class="checkbox-label" for="user-privacy">
-              <span class="checkbox-icon-span"> 
-                <svg class="checkbox-icon" width="10" height="10"> 
-                  <use href="./images/sprite.svg#click-icon-vector"></use>   
-                </svg>
-              </span> 
+              
                 I accept the terms and conditions of the 
               <a href="" class="accent-link"> Privacy Policy</a> 
             </label>
@@ -748,8 +764,51 @@ of pure delight!"
 
         </form>
       </div>  
-    </div>
+    </div> 
 
+
+    <!-- Modal menu
+    <div class="menu is-hidden">
+      <button class="menu-btn" type="button" aria-label="Close menu button">
+        <svg class="menu-btn-icon" width="" height="">
+          <use href=""></use>
+        </svg>
+      </button>
+      <ul class="menu-nav">
+        <li class="menu-nav-item">
+          <a class="menu-nav-link" href="./index.html" >Home</a></li>
+        <li class="menu-nav-item">
+          <a class="menu-nav-link" href="./index.html#made" >How it’s made?</a></li>
+        <li class="menu-nav-item">
+          <a class="menu-nav-link" href="" >Chocolate is loved</a></li>
+      </ul>
+
+      <ul class="menu-socials">
+        <li class="menu-item">
+          <a class="menu-link" href="https://www.facebook.com" target="_blank" rel="noopener no-referrer" aria-label="Link to Facebook">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-fcbk"></use>
+            </svg> 
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="https://instagram.com" target="_blank" rel="noopener no-referrer" aria-label="Link to Instagram" >
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-instgrm"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link" href="https://twitter.com" target="_blank" rel="noopener no-referrer" aria-label="Link to Twitter">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-twtr"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+    </div> -->
+    
     <script src="./js/modal.js"></script>
   </body>
 </html>
