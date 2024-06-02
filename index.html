@@ -47,7 +47,7 @@ of pure delight!"
               <use href="./images/sprite.svg#icon-choco-logo"></use>
             </svg>
           </a>  
-          <button class="menu-btn" type="button" aria-label="Open menu button">
+          <button class="menu-btn" type="button" aria-label="Open menu button" data-menu-open>
             <svg class="menu-btn-icon" width="28" height="28">
               <use href="./images/sprite.svg#icon-menu"></use>
             </svg>
@@ -111,7 +111,7 @@ of pure delight!"
     <!-- Unique content -->
     <main>
       <!-- Hero section -->
-      <section class="hero container">
+      <section class="hero container" id="hero">
 
         <div class="hero-container ">
           <h1 class="hero-title">
@@ -661,7 +661,7 @@ of pure delight!"
           <div class="footer-bottom">
             <ul class="footer-menu">
               <li class="footer-menu-item">
-                <a class="footer-menu-link" href="#home">Home</a>
+                <a class="footer-menu-link" href="#header">Home</a>
               </li>
               <li class="footer-menu-item">
                 <a class="footer-menu-link" href="#made">How it’s made?</a>
@@ -678,7 +678,8 @@ of pure delight!"
                 <input
                   class="subscribe-form-input"
                   type="email"
-                  placeholder="Enter your email" />
+                  placeholder="Enter your email" 
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
             </form>
             <button class="subscribe-form-btn" type="submit" >
               Subscribe
@@ -692,9 +693,9 @@ of pure delight!"
    
 
     <!-- Modal window --> 
-    <div class="backdrop is-hidden is-open" data-modal>
+    <!-- <div class="backdrop is-hidden" data-menu>
       <div class="modal"> 
-        <button class="close-button" type="button" aria-label="modal close button" data-modal-close>
+        <button class="close-button" type="button" aria-label="modal close button" data-menu-close>
           <svg class="close-icon" width="28" height="28">
             <use href="./images/sprite.svg#close-icon"></use>
           </svg>
@@ -709,10 +710,6 @@ of pure delight!"
               <input class="form-input" type="text" id="user-name" name="user-name" required  minlength="2"
               placeholder="&nbsp;"/>
               <svg class="icon-input" width="24" height="24"> 
-                <!-- 
-                <use class="error" href="./images/sprite.svg#error"></use>
-                <use class="success" href="./images/sprite.svg#success"></use>
-                -->
             
                 <use class="icon-user" href="./images/sprite.svg#icon-user1"></use>
               </svg>
@@ -768,51 +765,52 @@ of pure delight!"
 
         </form>
       </div>  
-    </div> 
+    </div>  -->
 
 
-    <!-- Modal menu
-    <div class="menu is-hidden">
-      <button class="menu-btn" type="button" aria-label="Close menu button">
-        <svg class="menu-btn-icon" width="" height="">
-          <use href=""></use>
-        </svg>
-      </button>
-      <ul class="menu-nav">
-        <li class="menu-nav-item">
-          <a class="menu-nav-link" href="./index.html" >Home</a></li>
-        <li class="menu-nav-item">
-          <a class="menu-nav-link" href="./index.html#made" >How it’s made?</a></li>
-        <li class="menu-nav-item">
-          <a class="menu-nav-link" href="" >Chocolate is loved</a></li>
-      </ul>
-
-      <ul class="menu-socials">
-        <li class="menu-item">
-          <a class="menu-link" href="https://www.facebook.com" target="_blank" rel="noopener no-referrer" aria-label="Link to Facebook">
-            <svg class="menu-icon" width="24" height="24">
-              <use href="./images/sprite.svg#icon-fcbk"></use>
-            </svg> 
-          </a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="https://instagram.com" target="_blank" rel="noopener no-referrer" aria-label="Link to Instagram" >
-            <svg class="menu-icon" width="24" height="24">
-              <use href="./images/sprite.svg#icon-instgrm"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="https://twitter.com" target="_blank" rel="noopener no-referrer" aria-label="Link to Twitter">
-            <svg class="menu-icon" width="24" height="24">
-              <use href="./images/sprite.svg#icon-twtr"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-
-    </div> -->
+    <!-- Modal menu -->
+    <div class="backdrop menu is-hidden" data-menu>
+      <div class="mobile-menu">
+        <button class="menu-btn" type="button" aria-label="Close menu button" data-menu-close>
+        
+          <svg class="close-icon" width="28" height="28">
+            <use href="./images/sprite.svg#close-icon"></use>
+          </svg>
+        </button>
+        <ul class="menu-nav">
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="./index.html" >Home</a></li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="./index.html#made" >How it’s made?</a></li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="" >Chocolate is loved</a></li>
+        </ul>
+        <ul class="menu-socials">
+          <li class="menu-item">
+            <a class="menu-link" href="https://www.facebook.com" target="_blank" rel="noopener no-referrer" aria-label="Link to Facebook">
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-fcbk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="https://instagram.com" target="_blank" rel="noopener no-referrer" aria-label="Link to Instagram" >
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-instgrm"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="https://twitter.com" target="_blank" rel="noopener no-referrer" aria-label="Link to Twitter">
+              <svg class="menu-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-twtr"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     
-    <script src="./js/modal.js"></script>
+    <script type="module" src="./main.js"></script>
   </body>
 </html>
